@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Records</title>
+</head>
+<body>
+    <h1>Love Calculation Record</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Name 1</td>
+                <td>Name 2</td>
+                <td>Percentage</td>
+                <td>Compatibility</td>
+            </tr>
+            <tr data-th-each="lc : ${list}">
+                <td><span data-th-text="${lc.fname}"></span></td>
+                <td><span data-th-text="${lc.sname}"></span></td>
+                <td><span data-th-text="${lc.percentage}"></span></td>
+                <td><span data-th-text="${lc.result}"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

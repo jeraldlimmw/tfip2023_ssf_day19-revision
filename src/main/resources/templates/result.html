@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body data-th-object="${result}">
+    <h1>Got chance or not?</h1>
+    <table>
+        <tr>
+            <td>Name 1</td>
+            <td>Name 2</td>
+            <td>Percentage</td>
+            <td>Compatibility</td>
+        </tr>
+        <tr>
+            <td><span data-th-text="*{fname}"></span></td>
+            <td><span data-th-text="*{sname}"></span></td>
+            <td><span data-th-text="*{percentage}"></span></td>
+            <td><span data-th-text="*{result}"></span></td>
+        </tr>
+    </table>
+</body>
+</html>
